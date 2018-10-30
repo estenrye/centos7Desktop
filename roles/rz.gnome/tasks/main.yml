@@ -1,0 +1,28 @@
+---
+- name: Install `Server with GUI` group
+  yum:
+    name: "@^graphical-server-environment"
+    state: present
+
+- name: Install `GNOME Desktop` group
+  yum:
+    name: "@^gnome-desktop-environment"
+    state: present
+
+- name: Install Graphical Administration Tools Group
+  yum:
+    name: "@Graphical Administration Tools"
+    state: present
+
+- name: Enable GUI on system startup
+  file:
+    src: /lib/systemd/system/runlevel5.target
+    dest: /etc/systemd/system/default.target
+    state: link
+  notify: restart
+
+- name: disable Initial Setup Graphical Service
+  systemd:
+    enabled: no
+    name: initial-setup-graphical.service
+

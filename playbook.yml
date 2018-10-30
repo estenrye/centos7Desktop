@@ -1,0 +1,7 @@
+---
+- name: Lab Machine
+  hosts: localhost
+  become: yes
+  roles:
+    - rz.gnome
+    - geerlingguy.git
