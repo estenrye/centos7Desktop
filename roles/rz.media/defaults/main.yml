@@ -1,0 +1,16 @@
+---
+media_packages:
+  - http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+  - http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+  - flash-plugin
+  - icedtea-web
+  - vlc
+  - smplayer
+  - ffmpeg
+  - HandBrake-gui
+  - HandBrake-cli
+  - libdvdcss
+  - gstreamer-plugins-ugly
+  - gstreamer1-plugins-ugly
+  - gstreamer-plugins-bad-nonfree
+  - gstreamer1-plugins-bad-freeworld

@@ -1,0 +1,7 @@
+---
+- name: Install media pakages
+  yum:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - "{{media_packages}}"
